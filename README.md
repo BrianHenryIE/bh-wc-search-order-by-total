@@ -2,6 +2,9 @@
 
 # BH WC Search Order by Total
 
+Basically just: https://www.skyverge.com/blog/searching-custom-fields-woocommerce-order-admin/
+
+
 ## Contributing
 
 Clone this repo, open PhpStorm, then run `composer install` to install the dependencies.
