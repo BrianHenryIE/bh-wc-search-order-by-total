@@ -29,6 +29,10 @@ class Order_Admin_List {
 	 */
 	public function remove_currency_symbol( WP_Query $_query ): void {
 
+		if ( ! function_exists( 'get_current_screen' ) ) {
+			return;
+		}
+
 		$screen = get_current_screen();
 
 		if ( empty( $screen ) || 'edit-shop_order' !== $screen->id ) {

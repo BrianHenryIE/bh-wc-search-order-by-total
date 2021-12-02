@@ -15,7 +15,7 @@
  * Plugin Name:       Search Order by Total
  * Plugin URI:        http://github.com/BrianHenryIE/bh-wc-search-order-by-total/
  * Description:       Enables searching WooCommerce orders by the order total.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Requires PHP:      7.4
  * Author:            BrianHenryIE
  * Author URI:        http://example.com/
@@ -41,7 +41,7 @@ require_once plugin_dir_path( __FILE__ ) . 'autoload.php';
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'BH_WC_SEARCH_ORDER_BY_TOTAL_VERSION', '1.0.1' );
+define( 'BH_WC_SEARCH_ORDER_BY_TOTAL_VERSION', '1.0.2' );
 
 /**
  * Begins execution of the plugin.
