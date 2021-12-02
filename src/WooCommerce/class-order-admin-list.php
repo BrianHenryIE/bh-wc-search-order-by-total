@@ -20,12 +20,20 @@ class Order_Admin_List {
 	 * If the search query is an amount prefixed with a currency symbol, remove the currency symbol.
 	 * The `_order_total` meta key does not contain the currency symbol.
 	 *
+	 * TODO: hook onto `get_search_query`.
+	 *
 	 * @hooked parse_query
 	 * @see WP_Query::parse_query()
 	 *
 	 * @param WP_Query $_query The query object, which will be unused.
 	 */
 	public function remove_currency_symbol( WP_Query $_query ): void {
+
+		$screen = get_current_screen();
+
+		if ( empty( $screen ) || 'edit-shop_order' !== $screen->id ) {
+			return;
+		}
 
 		$search_query = get_search_query();
 
